@@ -14,7 +14,7 @@
     </div>
     <div v-if="showInfo" class="info">
       <ul class="more_info">
-        <li>
+        <li v-if="pokemon.habitat">
           Habitat:
           <span>{{
             pokemon.habitat.name.slice(0, 1).toUpperCase() +

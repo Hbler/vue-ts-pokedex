@@ -21,6 +21,8 @@ export default defineComponent({
   name: "App",
   methods: {
     async getPokemons(name: string): Promise<string | void> {
+      if (name === "") return;
+
       this.loading = true;
       this.pokemons = [];
 
